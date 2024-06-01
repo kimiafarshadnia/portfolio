@@ -9,9 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'lavender': 'linear-gradient(to right, #b16dea, #d261d4, #e958bb, #f854a2, #ff5688, #ff5e79, #ff676b, #ff715f, #ff7c59, #ff8754, #ff9351, #ff9e4e)',
       },
     },
   },
