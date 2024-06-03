@@ -1,12 +1,14 @@
-import Image from "next/image";
-import { Footer, Header, Divider } from "../components";
+import { Hero, Divider, Project, Tools, Company, ContactMe } from "../components";
 
 export default function Home() {
   return (
-    <div >
-      
-      <h1>home</h1>
-      <Divider/>
+    <div className="flex flex-col gap-36">
+      <Hero />
+      <Divider />
+      <Project />
+      <Tools />
+      <Company />
+      <ContactMe />
     </div>
   );
 }
