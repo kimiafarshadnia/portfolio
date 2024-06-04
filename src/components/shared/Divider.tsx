@@ -8,8 +8,8 @@ export const Divider = () => {
                 <span>front-end</span>
                 <span>front-end</span>
                 <span className="hidden sm:block">front-end</span>
-                <span className="hidden md:block">front-end</span>
-                <span className="hidden md:block">front-end</span>
+                <span className="hidden lg:block">front-end</span>
+                <span className="hidden lg:block">front-end</span>
                 <span className="hidden md:block">developer</span>
             </div>
         </div>

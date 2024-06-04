@@ -29,7 +29,10 @@ export const CardProject = ({ project }: Props) => {
 
                 <div className="rounded-3xl p-px bg-lavender">
                     <div className="rounded-[calc(1.5rem-1px)] px-4 bg-white">
-                        <button className="text-center bg-white p-1 flex items-center gap-2">
+                        <button type='button'
+                        //  onClick={()=>NavigationPreloadManager(project.link)}
+                          className="text-center bg-white p-1 flex items-center gap-2"
+                        >
                             <span className="bg-lavender bg-clip-text text-transparent">view</span>
                             <Icon iconName={faArrowRight} size="lg" className="bg-lavender bg-clip-text text-transparent"/>
                         </button>

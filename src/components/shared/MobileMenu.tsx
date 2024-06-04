@@ -1,11 +1,13 @@
+'use client';
 import Link from 'next/link';
 import * as React from 'react';
 import { Icon } from 'Components';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import { Menu } from '@/src/constants';
-import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
+import Drawer from '@mui/material/Drawer';
+import { usePathname } from 'next/navigation';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -14,8 +16,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 type Anchor = 'left';
 
 export const MobileMenu = () => {
+    const pathname = usePathname();
     const [state, setState] = React.useState({
-
         left: false,
     });
 
@@ -38,24 +40,27 @@ export const MobileMenu = () => {
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
+            className="dark:bg-[#2B2B2B]"
         >
             <List>
                 {
-                    Menu.map((item) => (
-                        <ListItem key={item.id} >
-                            <ListItemButton>
-                                <ListItemIcon>
-                                    <li key={item.id} className='text-base font-semibold'
-                                    >
-                                        <Link href={item.address} className="bg-lavender bg-clip-text text-transparent">
+                    Menu.map((item) => {
+                        const isActive = pathname.endsWith(item.address)
+                        return (
+                            <ListItem key={item.id} >
+                                <ListItemButton>
+                                    <ListItemIcon>
+                                        < li key={item.id} className='text-base font-semibold'>
+                                            <Link href={item.address} className={`${isActive ? 'bg-lavender bg-clip-text text-transparent' : 'dark:text-white'}`}>	
                                             {item.title}
-                                        </Link>
-                                    </li>
-                                </ListItemIcon>
+                                            </Link>
+                                        </li>
+                                    </ListItemIcon>
 
-                            </ListItemButton>
-                        </ListItem>
-                    ))
+                                </ListItemButton>
+                            </ListItem>
+                        )
+                    })
                 }
             </List>
         </Box>
@@ -66,7 +71,7 @@ export const MobileMenu = () => {
             {(['left'] as const).map((anchor) => (
                 <React.Fragment key={anchor}>
                     <Button onClick={toggleDrawer(anchor, true)}>
-                        <Icon iconName={faBars} size='xl' className='text-gray-500 dark:text-white'/>
+                        <Icon iconName={faBars} size='xl' className='text-gray-500 dark:text-white' />
                     </Button>
                     <Drawer
                         anchor={anchor}

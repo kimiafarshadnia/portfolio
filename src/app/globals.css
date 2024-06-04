@@ -11,10 +11,19 @@
 	text-align: center;
 	font-size: 18px;
 	padding-bottom: 1rem;
-	/* Center slide text vertically */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.swiper-slide:nth-child(1) {
+	padding-left: 20px;
+}
+
+@media screen and(min-with: 768px) {
+	.swiper-slide:nth-child(1) {
+		padding-left: 0px;
+	}
 }
 
 .swiper-slide img {

@@ -9,15 +9,19 @@ export const Project = () => {
 
     const breakpoints = {
         0: {
-            slidesPerView: 2.3,
+            slidesPerView: 1.3,
             spaceBetween: 20
         },
         450: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.3,
             spaceBetween: 20
         },
         550: {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 3.5,
             spaceBetween: 20
         }
     };

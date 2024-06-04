@@ -10,24 +10,28 @@ export const Footer = () => {
     const icons = [
         {
             id: 0,
-            name: faGithub
+            name: faGithub,
+            href:""
         },
         {
             id: 1,
-            name: faLinkedinIn
+            name: faLinkedinIn,
+            href:""
         },
         {
             id: 2,
-            name: faTelegram
+            name: faTelegram,
+            href:""
         },
         {
             id: 3,
-            name: faEnvelope
+            name: faEnvelope,
+            href:""
         }
     ]
 
     return (
-        <footer>
+        <footer className='dark:bg-[#161513] dark:text-white'>
             <div className='container mx-auto flex flex-col gap-6'>
                 <div className='bg-[#2A2A2A] h-px'></div>
                 <div className='w-full py-5 flex flex-col-reverse md:flex-row justify-center items-center md:items-baseline md:justify-between gap-6 md:gap-0'>
@@ -41,7 +45,7 @@ export const Footer = () => {
                                 {
                                     footerMenu.map((item) => (
                                         <li key={item.id} className='text-base font-semibold'>
-                                            <Link href={item.address}>{item.title}</Link>
+                                            <Link href={item.address} className='hover:scale-110 duration-300 hover:bg-lavender hover:bg-clip-text hover:text-transparent'>{item.title}</Link>
                                         </li>
                                     ))
                                 }
@@ -52,8 +56,10 @@ export const Footer = () => {
                                 {
                                     icons.map((icon) => (
 
-                                        <li key={icon.id} className='bg-lavender flex items-center justify-center rounded-full w-9 h-9'>
-                                            <Icon iconName={icon.name} size='lg' className='text-white' />
+                                        <li key={icon.id} className='bg-lavender hover:scale-110 duration-300 flex items-center justify-center rounded-full w-9 h-9'>
+                                            <Link href={icon.href}>
+                                                <Icon iconName={icon.name} size='lg' className='text-white' />
+                                            </Link>
                                         </li>
                                     ))
                                 }
