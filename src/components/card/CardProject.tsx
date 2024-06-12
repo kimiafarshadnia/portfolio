@@ -34,7 +34,7 @@ export const CardProject = ({ project }: Props) => {
                           className="text-center bg-whie dark:bg-black p-1 flex items-center gap-2"
                         >
                             <span className="bg-lavender bg-clip-text text-transparent font-semibold">view</span>
-                            <Icon iconName={faArrowRight} size="lg" className="text-lavender "/>
+                            <Icon iconName={faArrowRight} size="sm" className="text-lavender "/>
                         </button>
                     </div>
                 </div>

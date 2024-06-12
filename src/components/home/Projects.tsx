@@ -1,8 +1,7 @@
 'use client'
 import 'swiper/css';
 import 'swiper/css/free-mode';
-import { CardProject } from "Components"
-import { Pagination } from 'swiper/modules';
+import { CardProject } from "Components";
 import projects from '../../data/project.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -42,7 +41,6 @@ export const Project = () => {
                         type: 'fraction',
                         dynamicBullets: true,
                     }}
-                    modules={[Pagination]}
                     className="mySwiper"
                 >
                     {projects.map((project) => (
