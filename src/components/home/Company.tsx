@@ -4,7 +4,7 @@ export const Company = () => {
             <div className="container mx-auto px-5 md:px-0">
                 <div className="flex flex-col gap-6">
                     <h2 className="bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl capitalize">Comapnies I’ve worked with</h2>
-                    <p className="text-primary font-normal md:w-[600px] dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, mollitia sit incidunt exercitationem odit .</p>
+                    <p className="text-primary font-normal md:w-[600px]">Throughout my career, I've had the privilege to work with a diverse range of companies, contributing to their success by delivering high-quality front-end solutions.</p>
 
                     <div className='flex flex-col gap-4'>
                         <h3 className='text-secondary dark:text-white text-2xl sm:text-3xl font-medium capitalize'>Daya Soft</h3>

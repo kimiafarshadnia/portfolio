@@ -24,9 +24,8 @@ export const Hero = () => {
                         }}
                        
                 /> */}
-                <h1 className="text-5xl sm:text-6xl font-bold bg-lavender bg-clip-text text-transparent">Hello,
-                    I’m Kimia Farshadnia</h1>
-                <p className="md:w-[500px] text-primary md:text-lg font-normal dark:text-white">I’m a Freelance <span className="text-secondary dark:text-white">Developer</span> based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+                <h1 className="text-5xl sm:text-6xl font-bold bg-lavender bg-clip-text text-transparent">Welcome to My World</h1>
+                <p className="md:w-[500px] text-primary md:text-lg font-normal dark:text-white">I’m Kimia Farshadnia, a passionate <span className="text-secondary dark:text-white capitalize font-medium">front-end developer</span> dedicated to creating beautiful, user-friendly web experiences. Lets build something amazing together.</p>
 
                 <div className="flex flex-row items-center justify-center gap-6">
                     <Link href={'/get-in-touch'}>

@@ -30,8 +30,7 @@ export const Project = () => {
         <div className="container mx-auto" id='works'>
             <div className="flex flex-col items-center justify-center text-center gap-6">
                 <h2 className="bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl pb-2">Projects</h2>
-                <p className="px-5 text-primary font-normal md:w-[600px] dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, mollitia sit incidunt exercitationem odit .</p>
-
+                <p className="px-5 text-primary font-normal md:w-[600px] dark:text-white">Explore my diverse range of front-end projects, showcasing creativity and technical expertise.</p>
 
                 <Swiper
                     breakpoints={breakpoints}

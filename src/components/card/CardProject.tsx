@@ -10,7 +10,7 @@ type Props = {
 
 export const CardProject = ({ project }: Props) => {
     return (
-        <div className="flex flex-col shadow-md rounded-lg">
+        <div className="flex flex-col shadow-md rounded-lg card">
             <iframe src={project.iframe} scrolling="no" frameBorder="0" loading="lazy" className="snap-none rounded-tl-lg rounded-tr-lg h-[250px]"></iframe>
             <div className="bg-white dark:bg-[#2C2C2C] flex flex-col justify-start items-start gap-3 p-5 rounded-bl-lg rounded-br-lg">
                 <span className="text-primary dark:text-white text-xs sm:text-sm">{project.category}</span>
@@ -23,20 +23,6 @@ export const CardProject = ({ project }: Props) => {
                     <Link href={project.link} target="_blank">
                         <Icon iconName={faGlobe} />
                     </Link>
-                </div>
-
-                <div className="bg-lavender bg-clip-text text-transparent"></div>
-
-                <div className="rounded-3xl p-px bg-lavender">
-                    <div className="rounded-[calc(1.5rem-1px)] px-4 bg-white dark:bg-black">
-                        <button type='button'
-                        //  onClick={()=>NavigationPreloadManager(project.link)}
-                          className="text-center bg-whie dark:bg-black p-1 flex items-center gap-2"
-                        >
-                            <span className="bg-lavender bg-clip-text text-transparent font-semibold">view</span>
-                            <Icon iconName={faArrowRight} size="sm" className="text-lavender "/>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
-'use client'
 import { useState } from "react"
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"
 
-export const ContactForm = () => {
+export const OrderForm = () => {
+
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -26,8 +26,6 @@ export const ContactForm = () => {
             toast.success("Submit");
         }
     }
-
-
 
     return (
         <form onSubmit={submitHandler} className="md:basis-2/4 w-full flex flex-col gap-6 pb-6">
