@@ -8,8 +8,6 @@ export default function About() {
             <p className="font-normal text-[#87909D] dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet.
 
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam tempora neque iusto. Praesentium, quam ab nisi provident inventore distinctio sed corporis aperiam accusamus reprehenderit sint dolor autem, neque laborum.</p>
-
-            <button type="button" className="rounded-lg px-4 py-2 bg-lavender text-white w-fit">say hello</button>
           </div>
           <div className="basis-2/4 flex flex-col gap-6">
             <div className="bg-lavender pl-1 rounded-md">

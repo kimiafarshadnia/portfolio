@@ -34,7 +34,7 @@ export const Footer = () => {
                                 {
                                     Social.map((item) => (
                                         <li key={item.id} className='bg-lavender hover:scale-110 duration-300 flex items-center justify-center rounded-full w-9 h-9'>
-                                            <Link href={item.href}>
+                                            <Link href={item.href} target='_blank'>
                                                 <Icon iconName={item.name} size='lg' className='text-white' />
                                             </Link>
                                         </li>

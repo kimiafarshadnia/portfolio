@@ -16,7 +16,7 @@ export const ContactMe = () => {
                             {
                                 Social.map((item) => (
                                     <li key={item.id} className=' hover:scale-110 duration-300 flex items-center justify-center rounded-full w-9 h-9'>
-                                        <Link href={item.href}>
+                                        <Link href={item.href} target='_blank'>
                                             <Icon iconName={item.name} size='xl' className='text-secondary dark:text-white' />
                                         </Link>
                                     </li>

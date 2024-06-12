@@ -15,11 +15,11 @@ export const Social = [
     {
         id: 2,
         name: faTelegram,
-        href:""
+        href:"https://telegram.me/kimiafarshadnia"
     },
     {
         id: 3,
         name: faEnvelope,
-        href:""
+        href:"mailto:farshadniakimia@gmail.com"
     }
 ]
