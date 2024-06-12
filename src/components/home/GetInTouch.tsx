@@ -7,19 +7,17 @@ export const GetInTouch = () => {
         <div className='container mx-auto px-5 md:px-0 mb-5'>
             <div className="relative sm:h-[350px] lg:h-[450px] bg-lavender text-center text-white rounded-2xl p-5 sm:p-10 flex flex-col justify-center items-center gap-6">
                 <div className='relative -top-10 sm:-top-24 lg:-top-36 bg-white dark:bg-darkMode text-secondary dark:text-white flex items-center justify-center sm:text-xl gap-2 px-5 py-4 sm:w-[350px] text-center rounded-2xl'>
-                    <Icon iconName={faRocket} size='lg' className='text-secondary dark:text-white'/>
+                    <Icon iconName={faRocket} size='lg' className='text-secondary dark:text-white' />
                     <span className="capitalize font-semibold">get in touch</span>
                 </div>
-               
-                </div>
-                    <h4 className="text-white dark:text-secondary text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold capitalize">Lets discuss your Project</h4>
-                    <Link href={'/get-in-touch'}>
-                        <button type="button" className="px-5 py-2 border border-white dark:border-secondary rounded-s-full rounded-e-full bg-transparent text-white dark:text-secondary dark:font-medium">
-                            get in touch
-                        </button>
-                    </Link>
-               
+
             </div>
+            <h4 className="text-white dark:text-secondary text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold capitalize">Lets discuss your Project</h4>
+            <Link href={'/get-in-touch'}>
+                <button type="button" className="px-5 py-2 border border-white dark:border-secondary rounded-s-full rounded-e-full bg-transparent text-white dark:text-secondary dark:font-medium">
+                    get in touch
+                </button>
+            </Link>
         </div>
-    )
-}
+    );
+};
