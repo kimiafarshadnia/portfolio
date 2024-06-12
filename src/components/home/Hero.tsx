@@ -9,21 +9,6 @@ export const Hero = () => {
                 <div className="flex items-center justify-center w-[250px] h-[250px] flex-shrink-0">
                     <img src="/images/me.jpg" alt="me" className="w-full h-full rounded-full" />
                 </div>
-                {/* <Typewriter
-                    onInit={(typewriter) => {
-                        typewriter.typeString('Hello,I’m Kimia Farshadnia')
-                            .callFunction(() => {
-                                console.log('String typed out!');
-                            })
-                            .pauseFor(2500)
-                            .deleteAll()
-                            .callFunction(() => {
-                                console.log('All strings were deleted');
-                            })
-                            .start();
-                        }}
-                       
-                /> */}
                 <h1 className="text-5xl sm:text-6xl font-bold bg-lavender bg-clip-text text-transparent">Welcome to My World</h1>
                 <p className="md:w-[500px] text-primary md:text-lg font-normal dark:text-white">I’m Kimia Farshadnia, a passionate <span className="text-secondary dark:text-white capitalize font-medium">front-end developer</span> dedicated to creating beautiful, user-friendly web experiences. Lets build something amazing together.</p>
 

@@ -54,7 +54,7 @@ export const Header = () => {
 
 					<MobileMenu />
 				</div>
-				<div className='hidden lg:block pl-5 md:pl-0 absolute animate-bounce hover:animate-none'>
+				<div className='hidden lg:block pl-5 md:pl-0 absolute'>
 					<div className='flex flex-col items-center justify-center'>
 						<div className='h-10 border-l border-dashed border-sky-600 w-px border-2 '></div>
 						<button type='button'
