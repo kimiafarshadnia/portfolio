@@ -19,11 +19,22 @@ export const Header = () => {
 		document.body.classList.toggle("dark");
 	}
 	return (
-		<header className='shadow-lg bg-white dark:bg-[#161513] dark:text-white w-full fixed z-20'>
+		<header className='shadow-lg bg-white dark:bg-darkMode dark:text-white w-full fixed z-20'>
 			<div className='container mx-auto'>
 				<div className='w-full py-5 flex justify-between items-center'>
-					<div className='pl-5 md:pl-0'>
-						brand
+					<div className='pl-5 md:pl-0 flex items-center gap-4'>
+						<span>brand</span>
+
+						<div className='lg:hidden'>
+							<div className='flex flex-col items-center justify-center'>
+								<button type='button'
+									onClick={darkModeHandler}
+									className='bg-lavender rounded-full flex items-center justify-center p-1 w-8 h-8'
+								>
+									<Icon iconName={darkMode ? faSun : faCloudMoon} size='lg' className="text-white" />
+								</button>
+							</div>
+						</div>
 					</div>
 					<nav className='hidden lg:block'>
 						<ul className='flex items-center gap-16'>
@@ -40,9 +51,10 @@ export const Header = () => {
 							}
 						</ul>
 					</nav>
+
 					<MobileMenu />
 				</div>
-				<div className='absolute animate-bounce hover:animate-none'>
+				<div className='hidden lg:block pl-5 md:pl-0 absolute animate-bounce hover:animate-none'>
 					<div className='flex flex-col items-center justify-center'>
 						<div className='h-10 border-l border-dashed border-sky-600 w-px border-2 '></div>
 						<button type='button'

@@ -40,7 +40,7 @@ export const MobileMenu = () => {
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
-            className="dark:bg-[#2B2B2B]"
+            className="dark:bg-darkMode"
         >
             <List>
                 {

@@ -1,13 +1,14 @@
-import { Hero, Divider, Project, Tools, Company, ContactMe } from "../components";
+import { Hero, Divider, Project, Tools, Company, ContactMe, GetInTouch } from "Components";
 
 export default function Home() {
   return (
-    <div className="dark:bg-[#161513] dark:text-white flex flex-col gap-36">
+    <div className="dark:bg-[#161513] dark:text-white flex flex-col gap-20 md:gap-36">
       <Hero />
       <Divider />
       <Project />
       <Tools />
       <Company />
+      <GetInTouch />
       <ContactMe />
     </div>
   );

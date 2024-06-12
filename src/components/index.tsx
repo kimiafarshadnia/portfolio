@@ -7,8 +7,10 @@ import { Company } from './home/Company';
 import { Project } from './home/Projects';
 import { Divider } from "./shared/Divider";
 import { ContactMe } from "./home/ContactMe";
+import { GetInTouch } from "./home/GetInTouch";
 import { CardProject } from './card/CardProject';
 import { MobileMenu } from "./shared/MobileMenu";
+import { ContactForm } from './forms/ContactForm';
 
 export {
     Header,
@@ -21,5 +23,7 @@ export {
     Tools,
     Company,
     ContactMe,
-    Icon
+    Icon,
+    ContactForm,
+    GetInTouch
 }
