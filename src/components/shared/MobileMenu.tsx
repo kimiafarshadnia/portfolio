@@ -67,9 +67,9 @@ export const MobileMenu = () => {
     );
 
     return (
-        <div className='lg:hidden'>
+        <div className='lg:hidden dark:bg-darkMode'>
             {(['left'] as const).map((anchor) => (
-                <React.Fragment key={anchor}>
+                <React.Fragment key={anchor} >
                     <Button onClick={toggleDrawer(anchor, true)}>
                         <Icon iconName={faBars} size='xl' className='text-gray-500 dark:text-white' />
                     </Button>

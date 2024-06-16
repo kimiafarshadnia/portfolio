@@ -1,6 +1,7 @@
-import Link from "next/link"
-import { ContactForm, Icon } from 'Components';
+import Link from "next/link";
+import { withHttps } from "Utils";
 import { Social } from "Constants";
+import { ContactForm, Icon } from 'Components';
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export const ContactMe = () => {
@@ -18,9 +19,9 @@ export const ContactMe = () => {
                         <ul className='flex items-center gap-6'>
                             {
                                 Social.map((item) => (
-                                    <li key={item.id} className=' hover:scale-110 duration-300 flex items-center justify-center rounded-full w-9 h-9'>
-                                        <Link href={item.href} target='_blank'>
-                                            <Icon iconName={item.name} size='xl' className='text-secondary dark:text-white' />
+                                    <li key={item.id} className='flex items-center justify-center rounded-full w-9 h-9'>
+                                        <Link href={withHttps(item.href)} target='_blank'>
+                                            <Icon iconName={item.name} size='xl' className='text-secondary dark:text-white hover:scale-110 duration-300 hover:text-purple dark:hover:text-purple' />
                                         </Link>
                                     </li>
                                 ))

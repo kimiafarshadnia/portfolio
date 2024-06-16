@@ -9,14 +9,12 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-      screens: {
-        "xs": "320px"
-      },
       colors: {
         "primary": "#87909D",
         "secondary": "#132238",
         "darkMode": "#161513",
-        "lightMode": "#F0F1F3"
+        "lightMode": "#F0F1F3",
+        "purple": "#B16DEA"
       },
       backgroundImage: {
         "lavender": "linear-gradient(to right, #b16dea, #d261d4, #e958bb, #f854a2, #ff5688, #ff5e79, #ff676b, #ff715f, #ff7c59, #ff8754, #ff9351, #ff9e4e)",

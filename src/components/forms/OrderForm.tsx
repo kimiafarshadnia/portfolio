@@ -1,6 +1,5 @@
 "use client"
-import { useState } from "react"
-import { toast } from "react-toastify"
+import { useState } from "react";
 
 export const OrderForm = () => {
 
@@ -24,7 +23,6 @@ export const OrderForm = () => {
                 id: Date.now(),
                 writeAt: new Date().toISOString(),
             }
-            toast.success("Submit");
         }
     }
 

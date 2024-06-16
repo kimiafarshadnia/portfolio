@@ -1,36 +1,44 @@
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
+import { withHttps } from "Utils";
 
 export const Tools = () => {
     const tools = [
         {
             id: 0,
             src: '/images/react.svg',
-            alt: 'react'
+            alt: 'react',
+            url: 'react.dev/'
         },
         {
             id: 1,
             src: '/images/next.svg',
-            alt: 'next js'
+            alt: 'next js',
+            url: 'nextjs.org/'
         },
         {
             id: 2,
             src: '/images/ts.svg',
-            alt: 'typescript'
+            alt: 'typescript',
+            url: 'www.typescriptlang.org/'
         },
         {
             id: 3,
             src: '/images/tailwind.svg',
-            alt: 'tailwind css'
+            alt: 'tailwind css',
+            url: 'tailwindcss.com/'
         },
         {
             id: 4,
             src: '/images/bootstrap.svg',
-            alt: 'bootstrap'
+            alt: 'bootstrap',
+            url: 'getbootstrap.com/'
         },
         {
             id: 5,
             src: '/images/sass.svg',
-            alt: 'sass processor'
+            alt: 'sass processor',
+            url: 'sass-lang.com/'
         },
     ]
     return (
@@ -41,7 +49,9 @@ export const Tools = () => {
 
                 <div className="flex items-center justify-center flex-wrap gap-6">
                     {tools.map((tool) => (
-                        <Image key={tool.id} src={tool.src} alt={tool.alt} width={70} height={70} />
+                        <Link href={withHttps(tool.url)} key={tool.id}>
+                            <Image src={tool.src} alt={tool.alt} width={60} height={60} loading="lazy"/>
+                        </Link>
                     ))}
                 </div>
             </div>

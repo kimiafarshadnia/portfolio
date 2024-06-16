@@ -14,6 +14,7 @@ import { GetInTouch } from "./home/GetInTouch";
 import { CardProject } from './card/CardProject';
 import { MobileMenu } from "./shared/MobileMenu";
 import { ContactForm } from './forms/ContactForm';
+import { ThemeToggle } from "./shared/ThemeToggle";
 
 export {
     Header,
@@ -31,5 +32,6 @@ export {
     OrderForm,
     GetInTouch,
     Benefit,
-    AboutMe
+    AboutMe,
+    ThemeToggle
 }

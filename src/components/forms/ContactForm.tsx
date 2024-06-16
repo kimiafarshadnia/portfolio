@@ -1,6 +1,5 @@
 'use client'
 import { useState } from "react"
-import { toast } from "react-toastify";
 
 export const ContactForm = () => {
     const [form, setForm] = useState({
@@ -23,7 +22,7 @@ export const ContactForm = () => {
                 id: Date.now(),
                 writeAt: new Date().toISOString(),
             }
-            toast.success("Submit");
+           
         }
     }
 
@@ -45,9 +44,9 @@ export const ContactForm = () => {
             </div>
             <div className="flex flex-col gap-2">
                 <label htmlFor="message" className="font-semibold capitalize text-secondary dark:text-white">Message Box</label>
-                <textarea rows={5} cols={4} name="message" id="message" onChange={changeHandler} className='bg-lightMode dark:bg-[#2B2B2B] px-5 py-1 w-full rounded-lg placeholder:text-sm placeholder:text-[#BDBDBD]' placeholder="Please type your message here"></textarea>
+                <textarea rows={5} cols={4} name="message" id="message" onChange={changeHandler} className='bg-lightMode dark:bg-[#2B2B2B] px-5 py-1 w-full rounded-lg placeholder:text-sm placeholder:text-[#BDBDBD] focus:ring-[#B16DEA]' placeholder="Please type your message here"></textarea>
             </div>
-            <button type='submit' className='w-fit bg-lavender text-white font-medium capitalize px-4 py-1 rounded-lg'>
+            <button type='submit' className='w-fit bg-lavender text-white dark:text-darkMode font-medium capitalize px-4 py-1 rounded-lg'>
                 send
             </button>
         </form>
