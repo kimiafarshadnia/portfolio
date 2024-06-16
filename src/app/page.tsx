@@ -2,7 +2,7 @@ import { Hero, Divider, Project, Tools, Company, ContactMe, GetInTouch } from "C
 
 export default function Home() {
   return (
-    <div className="dark:bg-[#161513] dark:text-white flex flex-col gap-20 md:gap-36">
+    <div className="bg-white dark:bg-darkMode dark:text-white flex flex-col gap-20 md:gap-36">
       <Hero />
       <Divider />
       <Project />

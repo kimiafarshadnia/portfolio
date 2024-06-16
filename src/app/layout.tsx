@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="dark:bg-[#161513] dark:text-white overflow-x-hidden">
+      <body className="bg-white dark:bg-darkMode dark:text-white overflow-x-hidden">
         <Header />
         <main>
           <ToastContainer />

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ContactForm, Icon } from 'Components';
 import { Social } from "Constants";
-
+import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 export const ContactMe = () => {
 
     return (
@@ -11,8 +11,13 @@ export const ContactMe = () => {
                     <h2 className="bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl capitalize">contact me</h2>
                     <p className="text-primary font-normal md:[350px] lg:w-[600px] dark:text-white">Have a project in mind or just want to say hello? Feel free to reach out to me. I’m always open to discussing new ideas, creative projects, or opportunities to be part of your vision.</p>
 
-                    <Link href='mailto:farshadniakimia@gmail.com' className="font-bold text-secondary dark:text-white text-lg md:text-xl">Farshadniakimia@gmail.com</Link>
-                    
+                    {/* <div className="w-fit bg-lightMode dark:bg-darkMode text-secondary dark:text-white rounded-lg flex gap-2 items-center px-5 py-2">
+                        <Icon iconName={faEnvelope} size="lg" className="" />
+                        <Link href='mailto:farshadniakimia@gmail.com' className="">Farshadniakimia@gmail.com</Link>
+                    </div> */}
+
+
+
                     <div>
                         <ul className='flex items-center gap-6'>
                             {
@@ -25,6 +30,11 @@ export const ContactMe = () => {
                                 ))
                             }
                         </ul>
+                    </div>
+
+                    <div className="w-fit bg-lightMode dark:bg-darkMode text-secondary dark:text-white rounded-lg flex gap-2 items-center px-5 py-2">
+                        <Icon iconName={faLocationDot} size="lg" className="" />
+                        <span className="capitalize">iran, tehran</span>
                     </div>
                 </div>
                 <ContactForm />

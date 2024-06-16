@@ -1,6 +1,6 @@
 export const Company = () => {
     return (
-        <div className="bg-[#F0F1F3] dark:bg-[#2B2B2B] py-[100px]">
+        <div className="bg-lightMode dark:bg-[#2B2B2B] py-[100px]">
             <div className="container mx-auto px-5 md:px-0">
                 <div className="flex flex-col gap-6">
                     <h2 className="bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl capitalize">Comapnies I’ve worked with</h2>

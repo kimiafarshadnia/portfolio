@@ -13,7 +13,7 @@ export const GetInTouch = () => {
 
                 <h4 className="text-white dark:text-secondary text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold capitalize">Lets discuss your Project</h4>
                 <Link href={'/get-in-touch'}>
-                    <button type="button" className="px-5 py-2 border border-white dark:border-secondary rounded-s-full rounded-e-full bg-transparent text-white dark:text-secondary dark:font-medium">
+                    <button type="button" className="px-5 py-2 border border-white dark:border-secondary rounded-s-full rounded-e-full bg-transparent text-white dark:text-secondary dark:font-medium transition-all duration-500">
                         get in touch
                     </button>
                 </Link>
