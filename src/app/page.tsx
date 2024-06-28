@@ -8,7 +8,7 @@ export default function Home() {
       </div>
 
       <div className='absolute flex justify-center items-center left-[-15rem]'>
-        <div className='w-[700px] h-[700px] rounded-full bg-shadow2 opacity-50 blur-2xl relative overflow-x-hidden animation1'></div>
+        <div className='w-[700px] h-[700px] rounded-full bg-shadow2 opacity-50 blur-2xl relative animation1'></div>
       </div>
 
       <Hero />
