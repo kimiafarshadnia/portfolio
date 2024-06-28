@@ -2,45 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper {
-	width: 100%;
-	height: 100%;
+body{
+	overflow-x: hidden !important;
 }
 
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	padding-bottom: 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.animation1{
+	animation: one 10s infinite;
 }
 
-.swiper-slide:nth-child(1) {
-	padding-left: 20px;
+.animation2{
+	animation: two 10s infinite;
 }
 
-@media screen and(min-with: 768px) {
-	.swiper-slide:nth-child(1) {
-		padding-left: 0px;
+@keyframes one{
+	0%{ left: 0px; top: 0px;}
+	25%{ left: -100px; top: 70px;}
+	50%{ left: 20px; top: 150px;}
+	75%{ left: 50px; top: 100px;}
+	100%{ left: 0px; top: 0px;}
+}
+
+@keyframes two{
+	0%{ left: 0px; top: 0px;}
+	25%{ left: 50px; top: 10px;}
+	50%{ left: 100px; top: 50px;}
+	75%{ left: 50px; top: 100px;}
+	100%{ left: 0px; top: 0px;}
+}
+.card{
+	position: relative;
+	overflow: hidden !important;
+	border-radius: 20px;
+}
+
+.card::after{
+	content: '';
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background-image: conic-gradient(transparent, transparent, transparent,#FF6268);
+	animation: animate 4s linear infinite;
+	animation-delay: -2s;
+}
+
+.card::before{
+	content: '';
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background-image: conic-gradient(transparent, transparent, transparent,#B16DEA);
+	animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+	0%{ 
+		transform: rotate(0deg);
+	}
+	100%{ 
+		transform: rotate(360deg);
 	}
 }
 
-.swiper-slide img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-iframe {
-	overflow: hidden;
-}
-
-.toast-message {
-	background: darkblue;
-	color: #fff;
-	font-size: 20px;
-	width: 34vw;
-	padding: 30px 20px;
+.card span{
+	position: absolute;
+	inset : 3px;
+	border-radius: 16px;
+	/* background: #161513; */
+	z-index: 1;
 }

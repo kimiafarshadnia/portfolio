@@ -13,12 +13,12 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemButton from '@mui/material/ListItemButton';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-type Anchor = 'left';
+type Anchor = 'top';
 
 export const MobileMenu = () => {
     const pathname = usePathname();
     const [state, setState] = React.useState({
-        left: false,
+        top: false,
     });
 
     const toggleDrawer =
@@ -68,7 +68,7 @@ export const MobileMenu = () => {
 
     return (
         <div className='lg:hidden dark:bg-darkMode'>
-            {(['left'] as const).map((anchor) => (
+            {(['top'] as const).map((anchor) => (
                 <React.Fragment key={anchor} >
                     <Button onClick={toggleDrawer(anchor, true)}>
                         <Icon iconName={faBars} size='xl' className='text-gray-500 dark:text-white' />
