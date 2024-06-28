@@ -5,7 +5,7 @@ import { Header } from "./shared/header";
 import { Footer } from "./shared/footer";
 import { Company } from './home/Company';
 import { Benefit } from "./about/Benefit";
-import { Project } from './home/Projects';
+import { Projects } from './home/Projects';
 import { AboutMe } from "./about/AboutMe";
 import { Divider } from "./shared/Divider";
 import { ContactMe } from "./home/ContactMe";
@@ -22,7 +22,7 @@ export {
     Footer,
     Hero,
     Divider,
-    Project,
+    Projects,
     CardProject,
     Tools,
     Company,
