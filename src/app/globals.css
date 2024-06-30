@@ -40,7 +40,7 @@ body{
 	position: absolute;
 	width: 500px;
 	height: 500px;
-	background-image: conic-gradient(transparent, transparent, transparent,#FF6268);
+	background-image: conic-gradient(transparent, transparent, #FF9E4E,#22d3ee);
 	animation: animate 4s linear infinite;
 	animation-delay: -2s;
 }
@@ -50,7 +50,7 @@ body{
 	position: absolute;
 	width: 500px;
 	height: 500px;
-	background-image: conic-gradient(transparent, transparent, transparent,#B16DEA);
+	background-image: conic-gradient(transparent, transparent, #FF6268,#B16DEA);
 	animation: animate 4s linear infinite;
 }
 
