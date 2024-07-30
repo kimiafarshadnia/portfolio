@@ -1,7 +1,7 @@
 export const AboutMe = () => {
     return (
         <div className="flex flex-col gap-6 basis-2/4">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-semibold capitalize">about me</h1>
+            <h1 className="w-fit bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl capitalize">about me</h1>
 
             <div className="flex flex-col gap-5 [&>*]:font-normal [&>*]:text-[#87909D] [&>*]:dark:text-white [&>*]:lg:pr-4 [&>*]:text-sm [&>*]:sm:text-base">
                 <p>

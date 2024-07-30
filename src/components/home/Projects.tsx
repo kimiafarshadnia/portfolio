@@ -15,8 +15,8 @@ export const Projects = () => {
 
     return (
         <div className="container mx-auto" id='works'>
-            <div className="flex flex-col items-center justify-center text-center gap-8">
-                <h2 className="bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl pb-2">Projects</h2>
+            <div className="flex flex-col justify-center gap-8">
+                <h2 className="px-5 bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl pb-2 w-fit">Projects</h2>
                 <p className="px-5 text-primary font-normal md:w-[600px] dark:text-white">Explore my diverse range of front-end projects, showcasing creativity and technical expertise.</p>
 
                 <div className='relative grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 px-5'>
@@ -28,7 +28,9 @@ export const Projects = () => {
                         ))
                     }
                 </div>
-                <button type="button" className="w-fit md:w-[223px] text-xs sm:text-sm md:text-base bg-black dark:bg-white rounded-s-full rounded-e-full dark:text-black text-white font-semibold py-2 md:py-3 px-6" onClick={() => setPage(page + 1)}>load more</button>
+                <div className='w-full flex items-center justify-center'>
+                    <button type="button" className="w-fit md:w-[223px] text-xs sm:text-sm md:text-base bg-black dark:bg-white rounded-s-full rounded-e-full dark:text-black text-white font-semibold py-2 md:py-3 px-6" onClick={() => setPage(page + 1)}>load more</button>
+                </div>
             </div>
         </div>
     )

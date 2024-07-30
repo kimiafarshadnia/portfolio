@@ -1,4 +1,4 @@
-import { Hero, Divider, Projects, Tools, Company, ContactMe, GetInTouch } from "Components";
+import { Hero, Divider, Projects, About, Tools, ContactMe, GetInTouch } from "Components";
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
       <Hero />
       <Divider />
       <Projects />
+      <About />
       <Tools />
-      <Company />
       <GetInTouch />
       <ContactMe />
     </div>

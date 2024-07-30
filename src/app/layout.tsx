@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white dark:bg-darkMode dark:text-white overflow-x-hidden scroll-smooth">
+      <body className="bg-white dark:bg-darkMode dark:text-white overflow-x-hidden scroll-smooth duration-500">
         <Header />
         <main>
           {children}

@@ -38,8 +38,8 @@ body{
 .card::after{
 	content: '';
 	position: absolute;
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: 100%;
 	background-image: conic-gradient(transparent, transparent, #FF9E4E,#22d3ee);
 	animation: animate 4s linear infinite;
 	animation-delay: -2s;
@@ -48,8 +48,8 @@ body{
 .card::before{
 	content: '';
 	position: absolute;
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: 100%;
 	background-image: conic-gradient(transparent, transparent, #FF6268,#B16DEA);
 	animation: animate 4s linear infinite;
 }
@@ -69,4 +69,9 @@ body{
 	border-radius: 16px;
 	/* background: #161513; */
 	z-index: 1;
+}
+
+.backdrop-blur, .backdrop-blur-0 {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }

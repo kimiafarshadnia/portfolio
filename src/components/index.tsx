@@ -1,12 +1,12 @@
 import { Hero } from "./home/Hero";
 import { Tools } from "./home/Tools";
+import { About } from './home/About';
 import { Icon } from './shared/Icon';
 import { Header } from "./shared/header";
 import { Footer } from "./shared/footer";
-import { Company } from './home/Company';
 import { Benefit } from "./about/Benefit";
-import { Projects } from './home/Projects';
 import { AboutMe } from "./about/AboutMe";
+import { Projects } from './home/Projects';
 import { Divider } from "./shared/Divider";
 import { ContactMe } from "./home/ContactMe";
 import { OrderForm } from "./forms/OrderForm";
@@ -15,7 +15,6 @@ import { CardProject } from './card/CardProject';
 import { MobileMenu } from "./shared/MobileMenu";
 import { ContactForm } from './forms/ContactForm';
 import { ThemeToggle } from "./shared/ThemeToggle";
-
 export {
     Header,
     MobileMenu,
@@ -25,7 +24,7 @@ export {
     Projects,
     CardProject,
     Tools,
-    Company,
+    About,
     ContactMe,
     Icon,
     ContactForm,
