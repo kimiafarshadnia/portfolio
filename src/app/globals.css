@@ -2,76 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
 	overflow-x: hidden !important;
 }
 
-.animation1{
+.animation1 {
 	animation: one 10s infinite;
 }
 
-.animation2{
+.animation2 {
 	animation: two 10s infinite;
 }
 
-@keyframes one{
-	0%{ left: 0px; top: 0px;}
-	25%{ left: -100px; top: 70px;}
-	50%{ left: 20px; top: 150px;}
-	75%{ left: 50px; top: 100px;}
-	100%{ left: 0px; top: 0px;}
+@keyframes one {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		left: -100px;
+		top: 70px;
+	}
+	50% {
+		left: 20px;
+		top: 150px;
+	}
+	75% {
+		left: 50px;
+		top: 100px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
 }
 
-@keyframes two{
-	0%{ left: 0px; top: 0px;}
-	25%{ left: 50px; top: 10px;}
-	50%{ left: 100px; top: 50px;}
-	75%{ left: 50px; top: 100px;}
-	100%{ left: 0px; top: 0px;}
+@keyframes two {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		left: 50px;
+		top: 10px;
+	}
+	50% {
+		left: 100px;
+		top: 50px;
+	}
+	75% {
+		left: 50px;
+		top: 100px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
 }
-.card{
+.card {
 	position: relative;
 	overflow: hidden !important;
 	border-radius: 20px;
 }
 
-.card::after{
+.card::after {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: conic-gradient(transparent, transparent, #FF9E4E,#22d3ee);
+	background-image: conic-gradient(
+		transparent,
+		transparent,
+		#ff9e4e,
+		#22d3ee
+	);
 	animation: animate 4s linear infinite;
 	animation-delay: -2s;
 }
 
-.card::before{
+.card::before {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: conic-gradient(transparent, transparent, #FF6268,#B16DEA);
+	background-image: conic-gradient(
+		transparent,
+		transparent,
+		#ff6268,
+		#b16dea
+	);
 	animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
-	0%{ 
+	0% {
 		transform: rotate(0deg);
 	}
-	100%{ 
+	100% {
 		transform: rotate(360deg);
 	}
 }
 
-.card span{
+.card span {
 	position: absolute;
-	inset : 3px;
+	inset: 3px;
 	border-radius: 16px;
 	/* background: #161513; */
 	z-index: 1;
 }
 
-.backdrop-blur, .backdrop-blur-0 {
-    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+.backdrop-blur,
+.backdrop-blur-0 {
+	-webkit-backdrop-filter: var(--tw-backdrop-blur)
+		var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)
+		var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate)
+		var(--tw-backdrop-invert) var(--tw-backdrop-opacity)
+		var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+	backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+		var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+		var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+		var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+		var(--tw-backdrop-sepia);
+}
+
+.embla {
+	overflow: hidden;
+}
+
+.embla__container {
+	display: flex;
+	gap: 30px;
+}
+
+.embla__slide {
+	flex: 0 0 100%;
+	min-width: 0;
+	flex-shrink: 0;
+	max-width: 320px;
 }

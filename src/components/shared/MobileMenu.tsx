@@ -67,7 +67,7 @@ export const MobileMenu = () => {
     );
 
     return (
-        <div className='lg:hidden dark:bg-darkMode'>
+        <div className='lg:hidden'>
             {(['top'] as const).map((anchor) => (
                 <React.Fragment key={anchor} >
                     <Button onClick={toggleDrawer(anchor, true)}>

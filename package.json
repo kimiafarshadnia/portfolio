@@ -17,6 +17,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/material": "^5.15.19",
+    "embla-carousel": "^8.1.7",
+    "embla-carousel-react": "^8.1.7",
     "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",
