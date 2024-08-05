@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import * as React from 'react';
+import { useState } from "react";
 import { Icon } from 'Components';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
@@ -13,12 +14,12 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemButton from '@mui/material/ListItemButton';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-type Anchor = 'top';
+type Anchor = 'bottom';
 
 export const MobileMenu = () => {
     const pathname = usePathname();
-    const [state, setState] = React.useState({
-        top: false,
+    const [state, setState] = useState({
+        bottom: false,
     });
 
     const toggleDrawer =
@@ -42,7 +43,7 @@ export const MobileMenu = () => {
             onKeyDown={toggleDrawer(anchor, false)}
             className="dark:bg-darkMode"
         >
-            <List>
+            <List className='flex'>
                 {
                     Menu.map((item) => {
                         const isActive = pathname.endsWith(item.address)
@@ -67,8 +68,8 @@ export const MobileMenu = () => {
     );
 
     return (
-        <div className='lg:hidden'>
-            {(['top'] as const).map((anchor) => (
+        <div className='sm:hidden'>
+            {(['bottom'] as const).map((anchor) => (
                 <React.Fragment key={anchor} >
                     <Button onClick={toggleDrawer(anchor, true)}>
                         <Icon iconName={faBars} size='xl' className='text-gray-500 dark:text-white' />

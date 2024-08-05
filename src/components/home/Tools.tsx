@@ -6,37 +6,37 @@ export const Tools = () => {
     const tools = [
         {
             id: 0,
-            src: '/images/react.svg',
+            src: '/images/tools/react.svg',
             alt: 'react',
             url: 'react.dev/'
         },
         {
             id: 1,
-            src: '/images/next.svg',
+            src: '/images/tools/next.svg',
             alt: 'next js',
             url: 'nextjs.org/'
         },
         {
             id: 2,
-            src: '/images/ts.svg',
+            src: '/images/tools/ts.svg',
             alt: 'typescript',
             url: 'www.typescriptlang.org/'
         },
         {
             id: 3,
-            src: '/images/tailwind.svg',
+            src: '/images/tools/tailwind.svg',
             alt: 'tailwind css',
             url: 'tailwindcss.com/'
         },
         {
             id: 4,
-            src: '/images/bootstrap.svg',
+            src: '/images/tools/bootstrap.svg',
             alt: 'bootstrap',
             url: 'getbootstrap.com/'
         },
         {
             id: 5,
-            src: '/images/sass.svg',
+            src: '/images/tools/sass.svg',
             alt: 'sass processor',
             url: 'sass-lang.com/'
         },

@@ -2,7 +2,7 @@ import { OrderForm } from "Components";
 
 export default function GetInTouch() {
     return (
-        <div className="relative flex flex-col gap-16 md:gap-36 overflow-hidden">
+        <div className="relative flex flex-col gap-16 md:gap-36 overflow-hidden py-20">
             <div className='absolute flex justify-center items-center top-[5rem] right-[-15rem]'>
                 <div className='w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full bg-shadow1 opacity-50 blur-2xl relative animation1'></div>
             </div>
@@ -11,7 +11,7 @@ export default function GetInTouch() {
                 <div className='w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full bg-shadow2 opacity-50 blur-2xl relative animation1'></div>
             </div>
             <div className='bg-white dark:bg-darkMode dark:text-white '>
-                <div className="container mx-auto px-5 md:px-0 py-[100px]">
+                <div className="container mx-auto px-5">
                     <div className='flex flex-col md:flex-row items-center justify-center md:justify-around gap-6'>
                         <div className="md:basis-2/4 w-full flex flex-col  gap-6">
                             <h1 className="bg-lavender bg-clip-text text-transparent font-bold text-4xl sm:text-6xl  md:text-7xl capitalize">get in touch</h1>

@@ -7,19 +7,19 @@ import { MobileMenu, ThemeToggle } from 'Components';
 export const Header = () => {
 	const pathname = usePathname();
 	return (
-		<header className='shadow-lg bg-transparent backdrop-blur-xl dark:text-white w-full fixed top-0 z-40  transition-colors duration-500'>
+		<header className='shadow-lg bg-slate-100/20 dark:bg-slate-800/20 sticky top-0 z-50 backdrop-filter backdrop-blur-[20px] dark:text-white w-full duration-500'>
 			<div className='container mx-auto'>
 				<div className='w-full py-4 flex justify-between items-center'>
 					<div className='pl-5 md:pl-0 flex items-center gap-4'>
 						<Link href='/' className='w-auto flex flex-shrink-0 '>
-							<img src="/images/logo.png" alt="logo" className='w-10 h-10' />
+							<img src="/images/logo.svg" alt="logo" className='w-10 h-10' />
 						</Link>
-						<div className='lg:hidden'>
+						<div className='sm:hidden'>
 							<ThemeToggle />
 						</div>
 					</div>
 
-					<nav className='hidden lg:block'>
+					<nav className='hidden sm:block'>
 						<ul className='flex items-center gap-16'>
 							{
 								Menu.map((item) => {

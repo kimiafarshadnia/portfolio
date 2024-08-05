@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Hero = () => {
     return (
-        <div className="container mx-auto px-5 xl:px-0 pt-[150px] flex justify-center">
+        <div className="container mx-auto px-5 flex justify-center">
             <div className='hidden sm:flex w-full absolute justify-center items-center top-[20rem]'>
                 <div className='w-[300px] h-[300px] rounded-full bg-lavender opacity-50 blur-2xl relative animation2'></div>
             </div>

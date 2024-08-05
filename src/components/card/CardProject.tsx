@@ -30,9 +30,9 @@ export const CardProject = ({ project }: Props) => {
                         </Link>
                     </div>
 
-                    <button type='button' className='w-fit bg-lavender text-white font-medium capitalize px-4 py-1 rounded-lg'>
-                       view
-                    </button>
+                    <Link href={`project/${project.id}`} className='w-fit bg-lavender text-white font-medium capitalize px-4 py-1 rounded-lg'>
+                        view
+                    </Link>
                 </div>
             </div>
         </div>

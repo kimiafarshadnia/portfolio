@@ -9,8 +9,8 @@ import { Footer, Header } from "Components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kimia Farshadnia",
-  description: "Kimia Farshadnia Portfolio",
+  title: "Kimia Farshadnia | Personal Portfolio",
+  description: "Kimia is a Front-End Developer with 5 years of experience.",
 };
 
 export default function RootLayout({
@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/logo.svg" sizes="any" />
+      </head>
       <body className="bg-white dark:bg-darkMode dark:text-white overflow-x-hidden scroll-smooth duration-500">
         <Header />
         <main>

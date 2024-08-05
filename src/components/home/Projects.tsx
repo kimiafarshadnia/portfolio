@@ -1,7 +1,8 @@
 'use client'
+import { Project } from 'Types';
 import { useEffect } from 'react';
 import { CardProject } from "Components";
-import projects from '../../data/project.json';
+import project from '../../data/project.json';
 import useEmblaCarousel from 'embla-carousel-react'
 
 export const Projects = () => {
@@ -24,9 +25,9 @@ export const Projects = () => {
                     <div className="embla" ref={emblaRef}>
                         <div className="embla__container pl-5 sm:pl-0">
                             {
-                                projects.map((post) => (
-                                    <div key={post.id} className='embla__slide'>
-                                        <CardProject project={post} />
+                                project.map((project:Project) => (
+                                    <div key={project.id} className='embla__slide'>
+                                        <CardProject project={project} />
                                     </div>
                                 ))
                             }

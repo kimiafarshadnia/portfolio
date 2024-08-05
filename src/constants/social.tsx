@@ -4,13 +4,13 @@ import { faGithub, faLinkedinIn, faTelegram } from "@fortawesome/free-brands-svg
 export const Social = [
     {
         id: 0,
-        name: faGithub,
-        href:"github.com/kimiafarshadnia/"
+        name: faLinkedinIn,
+        href:"www.linkedin.com/in/kimiafarshadnia/"
     },
     {
         id: 1,
-        name: faLinkedinIn,
-        href:"www.linkedin.com/in/kimiafarshadnia/"
+        name: faGithub,
+        href:"github.com/kimiafarshadnia/"
     },
     {
         id: 2,
