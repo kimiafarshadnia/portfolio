@@ -5,11 +5,11 @@ export const AboutMe = () => {
 
             <div className="flex flex-col gap-5 [&>*]:font-normal [&>*]:text-[#87909D] [&>*]:dark:text-white [&>*]:lg:pr-4 [&>*]:text-sm [&>*]:sm:text-base">
                 <p>
-                    Hello! I’m KIMIA, a passionate front-end developer specializing in modern technologies like React, Next.js, TypeScript, and Tailwind CSS. My expertise lies in creating sleek, efficient user interfaces with a deep interest in integrating AI to enhance the digital experience.
+                    Hello! I&apos;m KIMIA, a passionate front-end developer specializing in modern technologies like React, Next.js, TypeScript, and Tailwind CSS. My expertise lies in creating sleek, efficient user interfaces, and I have a growing interest in integrating AI to enhance digital experiences.
                 </p>
 
                 <p>
-                    I’m particularly excited about blockchain, the metaverse, and NFTs, with a focus on designing NFT marketplaces. I'm also expanding my skills with Three.js to create immersive 3D web experiences.
+                    I&apos;m particularly excited about blockchain, the metaverse, and NFTs, with a focus on designing NFT marketplaces that push the boundaries of interaction. Currently, I&apos;m expanding my skills with Three.js to create immersive 3D web experiences, aiming to bring these technologies to life in the digital world.
                 </p>
 
 
@@ -18,7 +18,7 @@ export const AboutMe = () => {
                 </p>
 
                 <p>
-                    Driven by both creativity and innovation, I aim to create projects that blend cutting-edge technology with AI, offering unique, memorable experiences for users. Let’s explore the future of technology together!
+                    Driven by both creativity and innovation, I aim to build projects that blend cutting-edge technology with AI, offering unique and memorable user experiences. Let&apos;s explore the future of technology together!
                 </p>
             </div>
         </div>

@@ -9,7 +9,7 @@ export const Hero = () => {
             </div>
             <div className="w-full flex flex-col xl:flex-row-reverse gap-12 items-center justify-center xl:justify-between text-center xl:text-start z-10">
                 <div className="flex items-center justify-center w-[250px] h-[250px] xl:w-[500px] xl:h-[500px] flex-shrink-0">
-                    <img src="/images/developer.png" alt="me" className="rounded-full xl:rounded-lg" />
+                    <img src="/images/developer.png" alt="developer" className="rounded-full xl:rounded-lg" />
                 </div>
                 <div className='flex flex-col gap-10'>
                     <h1 className="w-full pb-6 text-center xl:text-left text-5xl sm:text-6xl xl:text-7xl font-bold bg-lavender bg-clip-text text-transparent">Welcome to My World</h1>
