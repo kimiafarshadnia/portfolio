@@ -1,40 +1,61 @@
-'use client'
-import { Project } from 'Types';
-import { useEffect } from 'react';
-import { CardProject } from "Components";
-import project from '../../data/project.json';
-import useEmblaCarousel from 'embla-carousel-react'
+'use client';
+import { Repo } from 'Types';
+import { CardProject, SkeletonCard } from 'Components';
+import { useEffect, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 
 export const Projects = () => {
+    const [repos, setRepos] = useState<Repo[]>([]);
+    const [emblaRef, emblaApi] = useEmblaCarousel();
+    const [isLoading, setIsLoading] = useState(true);
 
-    const [emblaRef, emblaApi] = useEmblaCarousel()
+    useEffect(() => {
+        const fetchRepos = async () => {
+            try {
+                const response = await fetch('/api/repos');
+                const data = await response.json();
+                setRepos(data);
+                setIsLoading(false);
+            } catch (error) {
+                console.error('Error fetching repositories:', error);
+                setIsLoading(false);
+            }
+        };
+
+        fetchRepos();
+    }, []);
 
     useEffect(() => {
         if (emblaApi) {
-          console.log(emblaApi.slideNodes())
+            console.log(emblaApi.slideNodes());
         }
-      }, [emblaApi])
+    }, [emblaApi]);
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto" id="projects">
             <div className="flex flex-col justify-center gap-8">
                 <h2 className="px-5 md:px-0 bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl pb-2 w-fit">Projects</h2>
-                <p className="px-5 md:px-0 text-primary font-normal md:w-[600px] dark:text-white">Explore my diverse range of front-end projects, showcasing creativity and technical expertise.</p>
-
-               
-                    <div className="embla" ref={emblaRef}>
-                        <div className="embla__container pl-5 sm:pl-0">
-                            {
-                                project.map((project:Project) => (
-                                    <div key={project.id} className='embla__slide'>
-                                        <CardProject project={project} />
-                                    </div>
-                                ))
-                            }
-                        </div>
+                <p className="px-5 md:px-0 text-primary font-normal md:w-[600px] dark:text-white">
+                    Explore my diverse range of front-end projects, showcasing creativity and technical expertise.
+                </p>
+                <div className="embla" ref={emblaRef}>
+                    <div className="embla__container pl-5 sm:pl-0 py-5">
+                        {isLoading ? (
+                            Array.from({ length: 3 }).map((_, index) => (
+                                <div key={index} className="embla__slide">
+                                    <SkeletonCard />
+                                </div>
+                            ))
+                        ) : (
+                            repos.map((repo: Repo) => (
+                                <div key={repo.id} className="embla__slide">
+                                    <CardProject project={repo} />
+                                </div>
+                            ))
+                        )}
                     </div>
-                
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};

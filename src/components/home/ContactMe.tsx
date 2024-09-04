@@ -29,7 +29,7 @@ export const ContactMe = () => {
                         </ul>
                     </div>
 
-                    <div className="w-fit bg-lightMode dark:bg-darkMode text-secondary dark:text-white rounded-lg flex gap-2 items-center">
+                    <div className="w-fit px-2 py-1 bg-lightMode dark:bg-darkMode text-secondary dark:text-white rounded-lg flex gap-2 items-center">
                         <Icon iconName={faLocationDot} size="lg" />
                         <span className="capitalize">iran, tehran</span>
                     </div>

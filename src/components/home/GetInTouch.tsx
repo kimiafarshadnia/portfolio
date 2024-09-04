@@ -16,7 +16,7 @@ export const GetInTouch = () => {
 
                 <Tooltip title="Discuss Your Project">
                     <Link href={'/get-in-touch'}>
-                        <button type="button" className="px-5 py-2 border border-white dark:border-darkMode rounded-s-full rounded-e-full bg-transparent text-white dark:text-darkMode dark:font-medium transition-all duration-500">
+                        <button type="button" className="w-fit xl:w-[223px] text-xs sm:text-sm xl:text-base rounded-s-full rounded-e-full border border-secondary dark:border-black font-semibold text-black py-2 xl:py-3 px-6 transition-all duration-500 bg-[#FFFFFF1A] hover:bg-[#FFFFFF4D]">
                             get in touch
                         </button>
                     </Link>

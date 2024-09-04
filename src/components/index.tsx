@@ -1,20 +1,21 @@
 import { Hero } from "./home/Hero";
 import { Tools } from "./home/Tools";
 import { About } from './home/About';
-import { Icon } from './shared/Icon';
-import { Header } from "./shared/header";
-import { Footer } from "./shared/footer";
+import { Icon } from './shared/ui/Icon';
+import { Header } from "./shared/ui/header";
+import { Footer } from "./shared/ui/footer";
 import { Benefit } from "./home/Benefit";
 import { AboutMe } from "./home/AboutMe";
 import { Projects } from './home/Projects';
-import { Divider } from "./shared/Divider";
+import { Divider } from "./shared/feature/Divider";
 import { ContactMe } from "./home/ContactMe";
 import { OrderForm } from "./forms/OrderForm";
 import { GetInTouch } from "./home/GetInTouch";
 import { CardProject } from './card/CardProject';
-import { MobileMenu } from "./shared/MobileMenu";
+import { MobileMenu } from "./shared/ui/MobileMenu";
 import { ContactForm } from './forms/ContactForm';
-import { ThemeToggle } from "./shared/ThemeToggle";
+import { ThemeToggle } from "./shared/feature/ThemeToggle";
+import { SkeletonCard } from "./card/loading/SkeletonCard";
 export {
     Header,
     MobileMenu,
@@ -32,5 +33,6 @@ export {
     GetInTouch,
     Benefit,
     AboutMe,
-    ThemeToggle
+    ThemeToggle,
+    SkeletonCard
 }

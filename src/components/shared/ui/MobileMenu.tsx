@@ -2,16 +2,13 @@
 import Link from 'next/link';
 import * as React from 'react';
 import { useState } from "react";
+import { MenuItem } from 'Types';   
+import { Menu } from 'Constants';
 import { Icon } from 'Components';
 import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import { Menu } from '@/src/constants';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import { usePathname } from 'next/navigation';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemButton from '@mui/material/ListItemButton';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 type Anchor = 'bottom';
@@ -43,27 +40,21 @@ export const MobileMenu = () => {
             onKeyDown={toggleDrawer(anchor, false)}
             className="dark:bg-darkMode"
         >
-            <List className='flex'>
+            <ul className='flex flex-row items-center w-full justify-evenly py-5'>
                 {
-                    Menu.map((item) => {
+                    Menu.map((item: MenuItem) => {
                         const isActive = pathname.endsWith(item.address)
                         return (
-                            <ListItem key={item.id} >
-                                <ListItemButton>
-                                    <ListItemIcon>
-                                        < li key={item.id} className='text-base font-semibold'>
-                                            <Link href={item.address} className={`${isActive ? 'bg-lavender bg-clip-text text-transparent' : 'dark:text-white'}`}>	
-                                            {item.title}
-                                            </Link>
-                                        </li>
-                                    </ListItemIcon>
-
-                                </ListItemButton>
-                            </ListItem>
+                            <li key={item.id}>
+                                <Link href={item.address} className="flex flex-col items-center gap-2 font-light">
+                                    <Icon iconName={item.iconName} className='text-white'/>
+                                    <span className={`text-xs ${isActive ? 'bg-lavender bg-clip-text text-transparent' : 'dark:text-white'}`}>{item.title}</span>
+                                </Link>
+                            </li>
                         )
                     })
                 }
-            </List>
+            </ul>
         </Box>
     );
 
