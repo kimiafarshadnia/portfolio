@@ -1,22 +1,23 @@
 'use client';
-import Link from 'next/link';
+
 import * as React from 'react';
+import { useMenu } from "Hooks";
 import { useState } from "react";
-import { MenuItem } from 'Types';   
-import { Menu } from 'Constants';
-import { Icon } from 'Components';
+import { MenuItem } from 'Types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import { usePathname } from 'next/navigation';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Icon, NavigationLink, ThemeToggle } from 'Components';
 
-type Anchor = 'bottom';
+type Anchor = 'left';
 
 export const MobileMenu = () => {
+    const menu = useMenu();
     const pathname = usePathname();
     const [state, setState] = useState({
-        bottom: false,
+        left: false,
     });
 
     const toggleDrawer =
@@ -40,16 +41,21 @@ export const MobileMenu = () => {
             onKeyDown={toggleDrawer(anchor, false)}
             className="dark:bg-darkMode"
         >
-            <ul className='flex flex-row items-center w-full justify-evenly py-5'>
+
+            <ThemeToggle />
+
+            <ul className='flex flex-col items-start gap-10 p-5 h-screen w-full'>
                 {
-                    Menu.map((item: MenuItem) => {
+                    menu.map((item: MenuItem) => {
                         const isActive = pathname.endsWith(item.address)
                         return (
                             <li key={item.id}>
-                                <Link href={item.address} className="flex flex-col items-center gap-2 font-light">
-                                    <Icon iconName={item.iconName} className='text-white'/>
-                                    <span className={`text-xs ${isActive ? 'bg-lavender bg-clip-text text-transparent' : 'dark:text-white'}`}>{item.title}</span>
-                                </Link>
+                                <NavigationLink href={item.address}>
+                                    <div className='flex gap-2 items-center'>
+                                        <Icon iconName={item.iconName} className='text-white' />
+                                        <span className={`text-xs ${isActive ? 'bg-lavender bg-clip-text text-transparent' : 'dark:text-white'}`}>{item.title}</span>
+                                    </div>
+                                </NavigationLink>
                             </li>
                         )
                     })
@@ -60,7 +66,7 @@ export const MobileMenu = () => {
 
     return (
         <div className='sm:hidden'>
-            {(['bottom'] as const).map((anchor) => (
+            {(['left'] as const).map((anchor) => (
                 <React.Fragment key={anchor} >
                     <Button onClick={toggleDrawer(anchor, true)}>
                         <Icon iconName={faBars} size='xl' className='text-gray-500 dark:text-white' />

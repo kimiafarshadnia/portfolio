@@ -1,27 +1,36 @@
 import Link from "next/link";
-import { Icon } from "Components";
-import { Tooltip } from "@mui/material";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { withHttps } from "Utils";
+import { Social } from "Constants";
+import { OrderForm, Icon } from 'Components';
 
 export const GetInTouch = () => {
     return (
-        <div className='container mx-auto px-5 md:px-0 mb-5 relative'>
-            <div className="relative sm:h-[350px] lg:h-[450px] bg-lavender text-center text-white rounded-2xl p-5 sm:p-10 flex flex-col justify-center items-center gap-6">
-                <div className='relative -top-10  sm:-top-24 lg:-top-36 bg-white dark:bg-darkMode text-darkMode dark:text-white flex items-center justify-center sm:text-xl gap-2 px-5 py-4 sm:w-[350px] text-center rounded-2xl'>
-                    <Icon iconName={faRocket} size='lg' className='text-darkMode dark:text-white' />
-                    <span className="capitalize font-semibold">get in touch</span>
+        <div className="py-20" id="get-in-touch">
+            <div className="container mx-auto px-5 md:px-0">
+                <div className='flex flex-col md:flex-row justify-center md:justify-around gap-6'>
+                    <div className="md:basis-2/4 w-full flex flex-col  gap-6">
+                        <h2 className="w-fit bg-lavender bg-clip-text text-transparent font-bold text-4xl sm:text-6xl capitalize">get in touch</h2>
+
+                        <h2 className="font-medium text-2xl text-secondary dark:text-white">Lets discuss your Project</h2>
+
+                        <p className="text-primary font-normal md:[350px] lg:w-[600px] ">Interested in collaborating or have a project in mind? Let’s get in touch! I’m currently available to take on new landing page and single-page projects. Feel free to reach out to discuss your ideas and how we can bring them to life together.</p>
+
+                        <Link href='mailto:farshadniakimia@gmail.com' className="font-bold text-secondary dark:text-white text-lg">Farshadniakimia@gmail.com</Link>
+
+                        <ul className='flex items-center gap-6'>
+                            {
+                                Social.map((item) => (
+                                    <li key={item.id} className='flex items-center rounded-full w-9 h-9'>
+                                        <Link href={withHttps(item.href)} target='_blank'>
+                                            <Icon iconName={item.name} size='xl' className='text-secondary dark:text-white hover:scale-110 duration-300 hover:text-purple dark:hover:text-purple' />
+                                        </Link>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <OrderForm />
                 </div>
-
-                <h4 className="text-white dark:text-darkMode text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold capitalize">Lets discuss your Project</h4>
-
-                <Tooltip title="Discuss Your Project">
-                    <Link href={'/get-in-touch'}>
-                        <button type="button" className="w-fit xl:w-[223px] text-xs sm:text-sm xl:text-base rounded-s-full rounded-e-full border border-secondary dark:border-black font-semibold text-black py-2 xl:py-3 px-6 transition-all duration-500 bg-[#FFFFFF1A] hover:bg-[#FFFFFF4D]">
-                            get in touch
-                        </button>
-                    </Link>
-                </Tooltip>
-
             </div>
         </div>
     );

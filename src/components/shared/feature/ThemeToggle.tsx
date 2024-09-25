@@ -85,7 +85,7 @@ export const ThemeToggle = () => {
             </button>
 
             {dropdownOpen && (
-                <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                <div className="absolute md:right-0 mt-2 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
                     {themeOptions
                         .filter((option) => option.text !== theme)
                         .map((option) => (

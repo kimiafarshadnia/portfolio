@@ -13,9 +13,9 @@ import { OrderForm } from "./forms/OrderForm";
 import { GetInTouch } from "./home/GetInTouch";
 import { CardProject } from './card/CardProject';
 import { MobileMenu } from "./shared/ui/MobileMenu";
-import { ContactForm } from './forms/ContactForm';
 import { ThemeToggle } from "./shared/feature/ThemeToggle";
 import { SkeletonCard } from "./card/loading/SkeletonCard";
+import NavigationLink from "./shared/feature/NavigationLink";
 export {
     Header,
     MobileMenu,
@@ -28,11 +28,11 @@ export {
     About,
     ContactMe,
     Icon,
-    ContactForm,
     OrderForm,
     GetInTouch,
     Benefit,
     AboutMe,
     ThemeToggle,
-    SkeletonCard
+    SkeletonCard,
+    NavigationLink
 }

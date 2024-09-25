@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { withHttps } from "Utils";
 import { Social } from "Constants";
-import { ContactForm, Icon } from 'Components';
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { Icon } from 'Components';
 
 export const ContactMe = () => {
 
     return (
-        <div className="container mx-auto px-5 md:px-0" id='contact-me'>
-            <div className='flex flex-col md:flex-row items-center md:items-start justify-center md:justify-around gap-6'>
+        <div className="container mx-auto px-5 md:px-0 mb-5" id='contact-me'>
+            <div className='flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-6'>
                 <div className="md:basis-2/4 w-full flex flex-col gap-6">
                     <h2 className="w-fit bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl capitalize">contact me</h2>
                     <p className="text-primary font-normal md:[350px] lg:w-[600px] dark:text-white">Have a project in mind or just want to say hello? Feel free to reach out to me. I’m always open to discussing new ideas, creative projects, or opportunities to be part of your vision.</p>
@@ -28,13 +27,7 @@ export const ContactMe = () => {
                             }
                         </ul>
                     </div>
-
-                    <div className="w-fit px-2 py-1 bg-lightMode dark:bg-darkMode text-secondary dark:text-white rounded-lg flex gap-2 items-center">
-                        <Icon iconName={faLocationDot} size="lg" />
-                        <span className="capitalize">iran, tehran</span>
-                    </div>
                 </div>
-                <ContactForm />
             </div>
         </div>
     )

@@ -1,0 +1,73 @@
+{
+	"menu": {
+		"home": "Home",
+		"about": "About me",
+		"skills": "Skills",
+		"projects": "Projects",
+		"contact": "Contact me"
+	},
+	"hero": {
+		"title": "welcome to my world",
+		"description": "I’m Kimia Farshadnia, a passionate front-end developer dedicated to creating beautiful, user-friendly web experiences. Lets build something amazing together."
+	},
+	"project": {
+		"title": "Projects",
+		"description": "Explore my diverse range of front-end projects, showcasing creativity and technical expertise."
+	},
+	"about": {
+		"title": "About me",
+		"description": "Hello! I'm Kimia, a front-end developer specializing in React, Next.js, TypeScript, and Tailwind CSS. I focus on creating sleek user interfaces and am exploring AI to enhance digital experiences. I'm also passionate about blockchain, NFTs, and the metaverse, currently learning Three.js to create immersive 3D web experiences. Fluent in French, I enjoy collaborating globally and am driven by creativity and innovation. Let's build the future of technology together!",
+		"benefits": {
+			"benefit-1": {
+				"title": "Responsive Web Design",
+				"description": "I create visually stunning and fully responsive websites that provide an optimal viewing experience across all devices. My designs are user-centric, ensuring a seamless and engaging interaction for all users."
+			},
+			"benefit-2": {
+				"title": "Custom Web Solutions",
+				"description": "I tailor web solutions to meet the specific needs of each client, from landing pages to full-scale web applications. My approach is collaborative, ensuring that every project aligns with your vision and business goals."
+			},
+			"benefit-3": {
+				"title": "Single-Page Applications (SPAs)",
+				"description": "Using modern frameworks like React and Vue.js, I develop dynamic and efficient single-page applications. These SPAs are designed to offer a smooth and fast user experience, with minimal loading times and rich interactivity."
+			}
+		}
+	},
+	"tool": {
+		"title": "Tools",
+		"description": "Discover the tools and technologies I leverage to build efficient and innovative web solutions."
+	},
+	"getInTouch": {
+		"title": "Get In Touch",
+		"subTitle": "Lets discuss your Project",
+		"description": "Interested in collaborating or have a project in mind? Let’s get in touch! I’m currently available to take on new landing page and single-page projects. Feel free to reach out to discuss your ideas and how we can bring them to life together."
+	},
+	"label": {
+		"name": "your name",
+		"email": "Your Email Address",
+		"subject": "What’s This about?",
+		"message": "Message Box",
+		"country": "",
+		"city": "",
+		"budje": ""
+	},
+	"placeholder": {
+		"name": "Enter your Full Name",
+		"email": "Enter your email address",
+		"subject": "Enter a subject",
+		"message": "Please type your message here",
+		"country": "",
+		"city": "",
+		"budje": ""
+	},
+	"button": {
+		"download": "Download CV",
+		"getintouch": "Get In Touch",
+		"view": "View",
+		"send": "Send"
+	},
+	"darkMode": {
+		"dark": "dark",
+		"light": "light"
+	},
+	"copyRight": "All rights reserved"
+}

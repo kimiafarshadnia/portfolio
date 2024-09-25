@@ -1,0 +1,73 @@
+{
+	"menu": {
+		"home": "Accueil",
+		"about": "A propos de moi",
+		"skills": "Compétences",
+		"projects": "Projets",
+		"contact": "Contactez moi"
+	},
+	"hero": {
+		"title": "Bienvenue dans mon monde",
+		"description": "Bienvenue dans mon univers.Je suis Kimia Farshadnia, une développeuse front-end passionnée, dédiée à la création d'expériences web belles et conviviales. Construisons ensemble quelque chose d'incroyable."
+	},
+	"project": {
+		"title": "Projets",
+		"description": "Découvrez ma gamme variée de projets front-end, mettant en valeur ma créativité et mon expertise technique."
+	},
+	"about": {
+		"title": "À propos de moi",
+		"description": "Bonjour ! Je suis Kimia, développeuse front-end spécialisée en React, Next.js, TypeScript et Tailwind CSS. Je me concentre sur la création d'interfaces utilisateur élégantes et j'explore l'intelligence artificielle pour améliorer les expériences numériques. Passionnée par la blockchain, les NFTs et le métavers, j'apprends actuellement Three.js pour créer des expériences web immersives en 3D. Parlant couramment le français, j'aime collaborer à l'échelle mondiale et je suis motivée par la créativité et l'innovation. Construisons ensemble l'avenir de la technologie !",
+		"benefits": {
+			"benefit-1": {
+				"title": "Conception Web Responsive",
+				"description": "Je crée des sites web visuellement impressionnants et entièrement responsives qui offrent une expérience de visualisation optimale sur tous les appareils. Mes conceptions sont centrées sur l'utilisateur, garantissant une interaction fluide et engageante pour tous les utilisateurs."
+			},
+			"benefit-2": {
+				"title": "Solutions Web Personnalisées",
+				"description": "J'adapte des solutions web pour répondre aux besoins spécifiques de chaque client, des pages de destination aux applications web à grande échelle. Mon approche est collaborative, garantissant que chaque projet s'aligne sur votre vision et vos objectifs commerciaux."
+			},
+			"benefit-3": {
+				"title": "Applications à Page Unique (SPAs)",
+				"description": "En utilisant des frameworks modernes comme React et Vue.js, je développe des applications à page unique dynamiques et efficaces. Ces SPAs sont conçues pour offrir une expérience utilisateur fluide et rapide, avec des temps de chargement minimaux et une interactivité riche."
+			}
+		}
+	},
+	"tool": {
+		"title": "Outils",
+		"description": "Découvrez les outils et technologies que j'utilise pour créer des solutions web efficaces et innovantes."
+	},
+	"getInTouch": {
+		"title": "Contactez nous",
+		"subTitle": "Discutons de votre projet",
+		"description": "Intéressé par une collaboration ou avez-vous un projet en tête ? Entrons en contact ! Je suis actuellement disponible pour de nouveaux projets de pages d'atterrissage et de sites monopages. N'hésitez pas à me contacter pour discuter de vos idées et comment nous pouvons les concrétiser ensemble."
+	},
+	"label": {
+		"name": "Votre nom",
+		"email": "Votre adresse e-mail",
+		"subject": "De quoi s'agit-il?",
+		"message": "Boîte de message",
+		"country": "",
+		"city": "",
+		"budje": ""
+	},
+	"placeholder": {
+		"name": "Entrez votre nom complet",
+		"email": "Entrez votre adresse e-mail",
+		"subject": "Entrez un sujet",
+		"message": "Veuillez taper votre message ici",
+		"country": "",
+		"city": "",
+		"budje": ""
+	},
+	"button": {
+		"download": "Télécharger le CV",
+		"getintouch": "Entrer en contact",
+		"view": "Voir",
+		"send": "Envoyer"
+	},
+	"darkMode": {
+		"dark": "sombre",
+		"light": "lumière"
+	},
+	"copyRight": "Tous droits réservés."
+}
