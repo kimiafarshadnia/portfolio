@@ -1,7 +1,7 @@
 "use client";
 
 import { useMenu } from "Hooks";
-import { MobileMenu, NavigationLink, ThemeToggle } from "Components";
+import { MobileMenu, NavigationLink, ThemeToggle, LocaleSwitcher } from "Components";
 
 export const Header = () => {
 	const menu = useMenu();
@@ -29,8 +29,12 @@ export const Header = () => {
 							})}
 						</ul>
 					</nav>
-					<div className="hidden lg:block pr-5 md:pr-0">
-						<ThemeToggle />
+					<div className="flex gap-3 items-center pr-5 md:pr-0">
+						<LocaleSwitcher />
+						<span className="text-gray-200 dark:text-gray-500">|</span>
+						<div>
+							<ThemeToggle />
+						</div>
 					</div>
 					<MobileMenu />
 				</div>

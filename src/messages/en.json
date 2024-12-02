@@ -1,4 +1,8 @@
 {
+	"LocaleSwitcher": {
+		"label": "change language",
+		"locale": "{locale, select, en {🇬🇧} fr {🇫🇷}}"
+	},
 	"menu": {
 		"home": "Home",
 		"about": "About me",

@@ -15,7 +15,7 @@ export const GetInTouch = () => {
 
                         <p className="text-primary font-normal md:[350px] lg:w-[600px] ">Interested in collaborating or have a project in mind? Let’s get in touch! I’m currently available to take on new landing page and single-page projects. Feel free to reach out to discuss your ideas and how we can bring them to life together.</p>
 
-                        <Link href='mailto:farshadniakimia@gmail.com' className="font-bold text-secondary dark:text-white text-lg">Farshadniakimia@gmail.com</Link>
+                        <Link href='mailto:farshadniakimia@gmail.com' className="font-medium text-secondary dark:text-white text-lg">Farshadniakimia@gmail.com</Link>
 
                         <ul className='flex items-center gap-6'>
                             {

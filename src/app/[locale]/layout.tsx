@@ -34,7 +34,7 @@ export default async function LocaleLayout({
       <body className="bg-white dark:bg-darkMode dark:text-white overflow-x-hidden scroll-smooth duration-500">
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main>{children}</main>
+          <main className='flex flex-col justify-between h-lvh'>{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

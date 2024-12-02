@@ -16,6 +16,8 @@ import { MobileMenu } from "./shared/ui/MobileMenu";
 import { ThemeToggle } from "./shared/feature/ThemeToggle";
 import { SkeletonCard } from "./card/loading/SkeletonCard";
 import NavigationLink from "./shared/feature/NavigationLink";
+import  LocaleSwitcherSelect  from "./shared/feature/LocaleSwitcherSelect";
+import  LocaleSwitcher from "./shared/feature/LocaleSwitcher";
 export {
     Header,
     MobileMenu,
@@ -34,5 +36,7 @@ export {
     AboutMe,
     ThemeToggle,
     SkeletonCard,
-    NavigationLink
+    NavigationLink,
+    LocaleSwitcherSelect,
+    LocaleSwitcher
 }
